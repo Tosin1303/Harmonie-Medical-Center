@@ -1,37 +1,37 @@
 # Harmonie-Medical-Center
-📊 Healthcare Analytics — Harmonie Medical Center A real-world healthcare analytics project using SQL Server and Power BI to identify high-risk patients, analyse readmission trends, and evaluate clinical responsiveness. Includes optimised SQL scripts, KPIs, and insights to support operational decision-making in hospital settings.
+Healthcare Analytics — Harmonie Medical Center A real-world healthcare analytics project using SQL Server and Power BI to identify high-risk patients, analyse readmission trends, and evaluate clinical responsiveness. Includes optimised SQL scripts, KPIs, and insights to support operational decision-making in hospital settings.
 
 
 # Harmonie-Medical-Center - Healthcare Analytics Project
 
-## 📌 Project Overview
+## Project Overview
 This project presents a comprehensive analysis of healthcare data performed at Harmonie Medical Centre — a mid-sized, multi-speciality hospital. The goal is to leverage real-world data to identify high-risk patients, optimise departmental efficiency, and evaluate staff responsiveness using SQL and Power BI.
 
-## 🎯 Objectives
+## Objectives
 - Detect patients with abnormal vitals in real-time (last 48 hours)
 - Identify departments with high readmission rates
 - Monitor average doctor response times
 - Highlight peak operation hours and patient trends
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 - SQL Server 
 - Microsoft SQL Server Management Studio (SSMS)
 - Power BI (for optional visualization)
 
-## 🧩 Datasets
+## Datasets
 The analysis uses four structured datasets:
 - `patients.csv` — Patient demographics
 - `vitals.csv` — Vital sign measurements
 - `admissions.csv` — Admission and discharge logs
 - `doctor_visits.csv` — Clinical visit timings
 
-## 🧪 Key Insights
+## Key Insights
 - 1,466 out of 3,000 patients (49%) had abnormal vitals in the last 48 hours.
 - Cardiology had the highest 30-day readmission rate at 24.5%.
 - 30 doctors had average response times > 10 minutes.
 - Peak consultation hours: 13:00 and 16:00.
 
-## 📁 File Structure
+## File Structure
 ```
 📦 Harmonie-Medical-Center
 ├── Harmonie Medical Center – Report.docx          # Executive summary & project insights
@@ -43,12 +43,12 @@ The analysis uses four structured datasets:
 ├── vitals.csv                                     # Patient vital signs (heart rate, BP, temp)
 ```
 
-## ▶️ Getting Started
+## Getting Started
 1. Open SQL scripts in SQL Server Management Studio.
 3. Load datasets into your SQL database.
 4. Run the queries to replicate insights or build visualizations in Power BI.
 
-## 📈 Sample SQL Query: Abnormal Vitals in Last 48 Hours
+## Sample SQL Query: Abnormal Vitals in Last 48 Hours
 ```sql
 SELECT patient_id, timestamp, heart_rate, temperature, systolic_bp, diastolic_bp
 FROM vitals
@@ -61,10 +61,10 @@ WHERE timestamp >= DATEADD(HOUR, -48, (SELECT MAX(timestamp) FROM vitals))
   );
 ```
 
-## 🙌 Acknowledgements
+## Acknowledgements
 Thanks to the internship team at Harmonie Medical Center and Amdari for providing real-world project exposure in healthcare operations and analytics.
 
-## 📬 Contact
+## Contact
 For questions, collaborations, or feedback:
 - LinkedIn: www.linkedin.com/in/oluwatosin-mayowa-david
 
@@ -72,4 +72,4 @@ For questions, collaborations, or feedback:
 
 ---
 
-🩺 Empowering patient-first care through data-driven decisions.
+Empowering patient-first care through data-driven decisions.
