@@ -31,27 +31,20 @@ The analysis uses four structured datasets:
 - 30 doctors had average response times > 10 minutes.
 - Peak consultation hours: 13:00 and 16:00.
 
-## 📂 Repository Structure
+## 📁 File Structure
 ```
-📁 Harmonie-Medical-Center
-├── 📄 README.md
-├── 📁 datasets
-│   ├── patients.csv
-│   ├── vitals.csv
-│   ├── admissions.csv
-│   └── doctor_visits.csv
-├── 📁 sql-scripts
-│   └── harmonie_queries.sql
-├── 📁 visuals
-│   └── infographic.png
+📦 Harmonie-Medical-Center
+├── Harmonie Medical Center – Report.docx          # Executive summary & project insights
+├── README.md                                      # This README file
+├── harmonie_sql_queries_linkedin.sql              # Optimized SQL scripts used in analysis
+├── admissions.csv                                 # Patient admission/discharge data
+├── doctor_visits.csv                              # Doctor visit logs with timestamps
+├── patients.csv                                   # Demographic data for patients
+├── vitals.csv                                     # Patient vital signs (heart rate, BP, temp)
 ```
 
 ## ▶️ Getting Started
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/Harmonie-Medical-Center.git
-```
-2. Open SQL scripts in SQL Server Management Studio.
+1. Open SQL scripts in SQL Server Management Studio.
 3. Load datasets into your SQL database.
 4. Run the queries to replicate insights or build visualizations in Power BI.
 
